@@ -1,6 +1,6 @@
 # dinar 💰
 
-A lightweight Go CLI to track expenses from the terminal: **list**, **add**, **remove**, and **update** items stored in a local `data.json`, rendered as a clean ASCII table with a total cost footer 📊.
+A lightweight Go CLI to track expenses from the terminal: **list**, **add**, **remove**, **update** and **clear** items stored in a local `data.json`, rendered as a clean ASCII table with a total cost footer 📊.
 
 ## Features ✨
 
@@ -10,6 +10,7 @@ A lightweight Go CLI to track expenses from the terminal: **list**, **add**, **r
   - `add <title> <cost> <quantity>` — add a new expense item ➕
   - `remove <id>` — remove an expense by ID 🗑️
   - `update <id> <title> <cost> <quantity>` — update an expense by ID ✏️
+  - `clear` — cLear the list 🧹
 - Pretty terminal tables using `go-pretty` 🧾
 - Clean structure: Cobra commands in `cmd/`, models + JSON helpers in `pkg/` 🧱
 
@@ -98,14 +99,15 @@ dinar remove ff82fd4a
 dinar update ff82fd4a "netflix (family)" 1800 1
 ```
 
+### Clear the entire list 🧹
+
+```
+dinar clear
+```
+
 ## Roadmap for future improvements 🌱 
 
 - [ ] Add `--file` flag to choose a custom JSON path 📍
 - [ ] Add sorting/filtering (by cost, title, etc.) 🔎
 - [ ] Export to CSV 📤
 - [ ] Add tests for JSON utils + commands ✅
-
-## License 📜
-
-MIT (or choose another license and update this section).
-
