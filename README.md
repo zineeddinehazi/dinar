@@ -1,20 +1,20 @@
 # dinar 💰
 
-A lightweight Go CLI to track expenses from the terminal: **list**, **add**, **remove**, **update** and **clear** items stored in a local `data.json`, rendered as a clean ASCII table with a total cost footer 📊.
+A lightweight Go CLI to track expenses from the terminal: **list**, **add**, **remove**, **update** and **clear** items stored in a local `data.json`, rendered as a clean ASCII table with a total cost footer .
 
-## Features ✨
+## Features 
 
-- Stores expenses in a simple JSON file (`data.json`) 📁
+- Stores expenses in a simple JSON file (`data.json`) 
 - Commands:
-  - `list` — display all expenses as an ASCII table + total footer 📋
-  - `add <title> <cost> <quantity>` — add a new expense item ➕
-  - `remove <id>` — remove an expense by ID 🗑️
+  - `list` — display all expenses as an ASCII table + total footer 
+  - `add <title> <cost> <quantity>` — add a new expense item 
+  - `remove <id>` — remove an expense by ID 
   - `update <id> <title> <cost> <quantity>` — update an expense by ID ✏️
-  - `clear` — cLear the list 🧹
-- Pretty terminal tables using `go-pretty` 🧾
-- Clean structure: Cobra commands in `cmd/`, models + JSON helpers in `pkg/` 🧱
+  - `clear` — cLear the list 
+- Pretty terminal tables using `go-pretty` 
+- Clean structure: Cobra commands in `cmd/`, models + JSON helpers in `pkg/` 
 
-## Project structure 🗂️
+## Project structure 
 
 ```bash
 go-dinar/
@@ -28,7 +28,7 @@ go-dinar/
 └─ go.sum
 ```
 
-## Data format 🧩
+## Data format 
 
 `data.json` is a JSON array of expense objects:
 
@@ -40,9 +40,9 @@ go-dinar/
 ]
 ```
 
-## Installation ⚙️
+## Installation 
 
-### Option A: build locally 🛠️
+### Option A: build locally 
 
 ```
 git clone https://github.com/zineeddinehazi/go-dinar.git
@@ -56,16 +56,16 @@ Run it:
 ./dinar list
 ```
 
-### Option B: install to GOPATH/bin 📦 then run (depending on your PATH):
+### Option B: install to GOPATH/bin then run (depending on your PATH):
 
 ```
 go install ./...
 dinar list
 ```
 
-## Usage 🚀
+## Usage 
 
-### List expenses 📋
+### List expenses 
 
 ```
 dinar list
@@ -81,33 +81,33 @@ dinar list
 +-----------------+---------------------+-----------+-------------+
 ```
 
-### Add an expense ➕
+### Add an expense 
 
 ```
 dinar add "dinner date" 4000 1
 ```
 
-### Remove an expense 🗑️
+### Remove an expense 
 
 ```
 dinar remove ff82fd4a
 ```
 
-### Update an expense ✏️
+### Update an expense 
 
 ```
 dinar update ff82fd4a "netflix (family)" 1800 1
 ```
 
-### Clear the entire list 🧹
+### Clear the entire list 
 
 ```
 dinar clear
 ```
 
-## Roadmap for future improvements 🌱 
+## Roadmap for future improvements 
 
-- [ ] Add `--file` flag to choose a custom JSON path 📍
-- [ ] Add sorting/filtering (by cost, title, etc.) 🔎
-- [ ] Export to CSV 📤
-- [ ] Add tests for JSON utils + commands ✅
+- [ ] Add `--file` flag to choose a custom JSON path 
+- [ ] Add sorting/filtering (by cost, title, etc.) 
+- [ ] Export to CSV 
+- [ ] Add tests for JSON utils + commands
