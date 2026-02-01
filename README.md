@@ -1,6 +1,6 @@
 # dinar 💰
 
-A lightweight Go CLI to track expenses from the terminal: **list**, **add**, **remove**, **update** and **clear** items stored in a local `data.json`, rendered as a clean ASCII table with a total cost footer .
+A lightweight Go CLI to track expenses in the terminal: **list**, **add**, **remove**, **update** and **clear** items stored in a local `data.json`, rendered as a clean ASCII table with a total cost footer .
 
 ## Features 
 
@@ -17,7 +17,7 @@ A lightweight Go CLI to track expenses from the terminal: **list**, **add**, **r
 ## Project structure 
 
 ```bash
-go-dinar/
+dinar/
 ├─ cmd/ # Cobra commands (list/add/remove/update)
 ├─ pkg/ # Shared code
 │ ├─ models.go # Expense structs/models
@@ -45,8 +45,8 @@ go-dinar/
 ### Option A: build locally 
 
 ```
-git clone https://github.com/zineeddinehazi/go-dinar.git
-cd go-dinar
+git clone https://github.com/zineeddinehazi/dinar.git
+cd dinar
 go build -o dinar .
 ```
 
