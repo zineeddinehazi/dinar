@@ -1,7 +1,7 @@
 package main
 
 import (
-	"example/go-dinar/cmd"
+	"example/dinar/cmd"
 )
 
 func main() {
