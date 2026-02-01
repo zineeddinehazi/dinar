@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"example/go-dinar/pkg"
+	"example/dinar/pkg"
 	"strconv"
 
 	"github.com/google/uuid"
