@@ -47,7 +47,7 @@ dinar/
 ```
 git clone https://github.com/zineeddinehazi/dinar.git
 cd dinar
-go build -o dinar .
+go build .
 ```
 
 Run it:
